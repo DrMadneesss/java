@@ -27,6 +27,9 @@
 		          </li> 
 				  <li class="nav-item">
 		            <a class="nav-link" href="/servicos">Serviços</a>
+		          </li>	  
+				  <li class="nav-item">
+		            <a class="nav-link" href="/contatos">contatos</a>
 		          </li>
 				  
 			      <li class="nav-item dropdown">

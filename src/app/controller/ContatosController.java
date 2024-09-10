@@ -12,6 +12,10 @@ public class ContatosController {
     @GetMapping("/contatos")
     public String contatos(Model model) { 
         List<String> listaContatos = new ArrayList<>();
+        listaContatos.add("Comercial: (16)3252-1111");
+        listaContatos.add("Suporte: (16)3252-2222");
+        listaContatos.add("Financeiro: (16)3252-3333");
+        model.addAttribute("listaContatos", listaContatos);
         return "contatos";
     }
 }
