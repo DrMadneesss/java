@@ -1,0 +1,9 @@
+CREATE TABLE imovel(
+	codigo INTEGER NOT NULL AUTO_INCREMENT,
+	rua VARCHAR(100),
+	numero VARCHAR(10),
+	tamanho NUMERIC(10,3),
+	valor NUMERIC(10,2),
+	CONSTRAINT pk_imovel PRIMARY KEY (codigo)
+	
+)ENGINE=INNODB;
