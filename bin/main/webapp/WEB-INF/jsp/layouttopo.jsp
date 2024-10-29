@@ -31,25 +31,25 @@
 				  <li class="nav-item">
 		            <a class="nav-link" href="/contatos">contatos</a>
 		          </li>
-				  
+				
 			      <li class="nav-item dropdown">
 			          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" 
 			          role="button" data-bs-toggle="dropdown" aria-expanded="false">
-			            Menu
+			            Imóvel
 			          </a>
 			          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
 			            <li>
-			            <a class="dropdown-item" href="#">Submenu 1</a>
+			            <a class="dropdown-item" href="/cadastrarimovel">Cadastrar</a>
 			            </li>
 			            <li><hr class="dropdown-divider"></li>			            
 			            <li>
-			            <a class="dropdown-item" href="#">Submenu 2</a>
+			            <a class="dropdown-item" href="/listarimoveis">Listar</a>
 			            </li>
 			          </ul>
 			       </li>
 			      		          
 		        </ul>
-		        <form class="d-flex" method="GET" action="/">
+		        <form class="d-flex" method="GET" action="/procurarimoveis">
 		          <input class="form-control me-2" type="search" placeholder="Procurar" 
 		          	aria-label="Search" name="descricao">
 		          <button class="btn btn-outline-success" type="submit">Procurar</button>
