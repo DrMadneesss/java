@@ -18,25 +18,36 @@
 <body>
 
 <div class="container">
-    <h2>Cadastro de Imóvel</h2>
-    <form:form action="/cadastrarimovel" modelAttribute="imovel">
+    <h2>Alterar Imóvel</h2>
+    
+    <form:form action="/alterarimovel" modelAttribute="imovel">
+        <div class="form-group">
+            <label for="codigo">Còdigo</label>
+            <input type="text" class="form-control" value="${imovel.getCodigo()}" disabled/>
+            <input type="hidden" name= "codigo" value="${imovel.getCodigo()}"/>
+        </div>
+
         <div class="form-group">
             <label for="rua">Rua</label>
-            <input type="text" class="form-control" id="rua" name="rua" placeholder="Digite a rua" required>
+            <input type="text" class="form-control" id="rua" name="rua" value="${imovel.getRua()}">
         </div>
+
         <div class="form-group">
             <label for="numero">Número</label>
-            <input type="number" class="form-control" id="numero" name="numero" placeholder="Digite o número" required>
+            <input type="number" class="form-control" id="numero" name="numero" value="${imovel.getNumero()}">
         </div>
+
         <div class="form-group">
             <label for="tamanho">Tamanho (m²)</label>
-            <input type="number" class="form-control" id="tamanho" name="tamanho" placeholder="Digite o tamanho" required>
+            <input type="number" class="form-control" id="tamanho" name="tamanho" value="${imovel.getTamanho()}">
         </div>
+
         <div class="form-group">
             <label for="valor">Valor (R$)</label>
-            <input type="number" class="form-control" id="valor" name="valor" placeholder="Digite o valor" required>
+            <input type="number" class="form-control" id="valor" name="valor" value="${imovel.getValor()}">
         </div>
-        <button type="submit" class="btn btn-primary">Cadastrar</button>
+
+        <button type="submit" class="btn btn-primary">Alterar</button>
     </form:form>
 </div>
 

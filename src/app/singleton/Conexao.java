@@ -5,16 +5,17 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class Conexao {
+
     private static Conexao instancia;
     private Connection connection;
-    private String driver = "com.mysql.jdbc.Driver";
+    private String drive = "com.mysql.jdbc.Driver";
     private String url = "jdbc:mysql://localhost/java";
     private String usuario = "root";
     private String senha = "";
 
     public Connection getConexao() {
         try {
-            Class.forName(driver);
+            Class.forName(drive);
             this.connection = DriverManager.getConnection(url, usuario, senha);
             return this.connection;
         } catch (ClassNotFoundException | SQLException e) {
